@@ -95,7 +95,7 @@
     <header>
       <p class="eyebrow">Tiko</p>
       <h1>Privacy Policy</h1>
-      <p class="updated"><strong>Last updated:</strong> 2026-08-11</p>
+      <p class="updated"><strong>Last updated:</strong> 2026-08-18</p>
     </header>
 
     <article>
@@ -112,13 +112,14 @@
         <li>event information needed for welcomes, revive sessions, drops, AFK status, farming, fishing, mining, trading, notifications, and similar features; and</li>
         <li>information that you voluntarily provide when contacting Tiko through the official Discord server or another support channel.</li>
       </ul>
-      <p>Tiko may also temporarily process message text for the limited purpose described in Section 2. Message text is not part of Tiko’s stored user or server records.</p>
+      <p>Tiko does not currently process incoming message text. Current message-driven features use message metadata and other required event information rather than message text.</p>
       <p>Server administrators may configure message templates for Tiko’s own welcome and revive messages. Those templates are stored as server configuration and are separate from incoming Discord message text.</p>
 
-      <h2>2. Message content</h2>
-      <p>Tiko uses Discord’s Message Content privileged intent to check message text for welcome validation. When a member is mentioned during an active welcome session, Tiko may check the message to determine whether it contains a valid greeting. Replies to the newcomer may be validated through Discord message metadata and do not require the text itself.</p>
-      <p>Message text is accessed only when the message is received, used for the welcome check, and discarded after the check is complete. Tiko does not store, log, cache, export, or retain message text in a database, file, persistent cache, or other record. Tiko does not send message text to any separate third-party service or disclose it for advertising, analytics, profiling, or artificial intelligence, and does not use it to train artificial intelligence or machine-learning models.</p>
-      <p>Other Tiko features, including XP, cooldowns, drops, quests, leaderboards, and channel-based activity checks, use message metadata and other required event information rather than message text. Tiko does not use message content for advertising, profiling, or any purpose unrelated to the stated welcome-validation feature.</p>
+      <h2>2. Message content if the intent is enabled</h2>
+      <p>Tiko currently does not have access to Discord’s Message Content privileged intent and does not read incoming message text. If Tiko later receives access to this intent, this section will be updated before the intent is used.</p>
+      <p>If enabled, Tiko may check message text only for welcome validation when a member is mentioned during an active welcome session.</p>
+      <p>Any message text accessed under this future feature would be used only for the welcome check and discarded after the check. It would not be stored, logged, cached, exported, or retained in a database, file, persistent cache, or other record. Tiko would not send it to a separate third-party service or use it for advertising, analytics, profiling, or artificial intelligence.</p>
+      <p>Tiko does not currently use message content for any purpose. If the Message Content intent is enabled in the future, it will be used only as described in this section.</p>
 
       <h2>3. How Tiko uses information</h2>
       <p>Tiko uses information to:</p>
@@ -189,3 +190,4 @@
   </main>
 </body>
 </html>
+
